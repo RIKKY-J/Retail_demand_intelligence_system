@@ -158,7 +158,9 @@ def test_end_to_end_lgbm_training_and_native_save(tmp_path: Path) -> None:
         assert h_metrics["seasonal_naive"]["mae"] >= 0.0
 
     assert (tmp_path / "model_metrics.json").exists()
-    assert len(summary["per_sku_val_rmse"]) == 50
+    expected_skus = result["sales_df"]["item_id"].nunique()
+    assert expected_skus > 0
+    assert len(summary["per_sku_val_rmse"]) == expected_skus
     assert db_file.exists()
 
 

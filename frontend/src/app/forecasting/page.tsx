@@ -146,7 +146,7 @@ export default function ForecastingPage() {
                     Historical Sales + {horizon}-Day Forecast ({data.item_id})
                   </h3>
                   <p className="text-xs text-slate-500">
-                    Last 60 days actuals followed by {horizon}-day LightGBM point forecast, P95 bound, and Seasonal Naive
+                    Last 60 days actuals followed by {horizon}-day LightGBM point forecast, P95 Upper Estimate (RMSE-based), and Seasonal Naive
                   </p>
                 </div>
               </div>
@@ -202,7 +202,7 @@ export default function ForecastingPage() {
                         LightGBM Expected Units
                       </th>
                       <th className="py-2 pr-4 text-right font-medium">
-                        LightGBM P95 Upper
+                        P95 Upper Estimate (RMSE-based)
                       </th>
                       <th className="py-2 text-right font-medium">
                         Seasonal Naive Baseline

@@ -174,9 +174,11 @@ def test_28day_policy_backtest_on_seeded_dataset(tmp_path) -> None:
 
     base = backtest["seasonal_naive"]
     lgbm = backtest["lightgbm"]
+    expected_skus = pipeline_out["sales_df"]["item_id"].nunique()
 
-    assert base["skus_evaluated"] == 50
-    assert lgbm["skus_evaluated"] == 50
+    assert expected_skus > 0
+    assert base["skus_evaluated"] == expected_skus
+    assert lgbm["skus_evaluated"] == expected_skus
     assert base["total_actual_demand"] == pytest.approx(lgbm["total_actual_demand"])
     assert 0.0 <= base["fill_rate_pct"] <= 100.0
     assert 0.0 <= lgbm["fill_rate_pct"] <= 100.0

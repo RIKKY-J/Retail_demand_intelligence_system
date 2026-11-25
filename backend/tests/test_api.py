@@ -19,17 +19,19 @@ def test_overview_endpoint() -> None:
     res = client.get("/api/overview")
     assert res.status_code == 200
     data = res.json()
-    assert data["kpis"]["monitored_skus"] == 50
+    assert data["kpis"]["monitored_skus"] > 0
     assert data["kpis"]["is_simulated_inventory"] is True
     assert len(data["sales_trend"]) > 0
     assert len(data["status_breakdown"]) == 4
 
 
 def test_inventory_get_and_patch_persistence() -> None:
+    overview_skus = client.get("/api/overview").json()["kpis"]["monitored_skus"]
     res = client.get("/api/inventory")
     assert res.status_code == 200
     items = res.json()["items"]
-    assert len(items) == 50
+    assert len(items) == overview_skus
+    assert len(items) > 0
 
     target = items[0]
     store_id = target["store_id"]
@@ -74,7 +76,9 @@ def test_forecasts_analytics_alerts_evaluation_endpoints() -> None:
     ev_data = ev.json()
     assert len(ev_data["horizon_metrics"]) == 3
     bt = ev_data["policy_backtest_28d"]
-    assert bt["lightgbm"]["skus_evaluated"] == 50
+    overview_skus = client.get("/api/overview").json()["kpis"]["monitored_skus"]
+    assert bt["lightgbm"]["skus_evaluated"] == overview_skus
+    assert bt["lightgbm"]["skus_evaluated"] > 0
     assert "total_policy_cost" in bt["lightgbm"]
     assert "holding_cost" in bt["lightgbm"]
     assert "stockout_cost" in bt["lightgbm"]

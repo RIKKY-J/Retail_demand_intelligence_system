@@ -381,13 +381,14 @@ def seed_sqlite(
             ],
         )
 
-        # 3. inventory & inventory_transactions (diverse status distribution across 50 SKUs)
+        # 3. inventory & inventory_transactions (proportional status distribution across any SKU count)
         inv_rows = []
         txn_rows = []
-        for idx, sku in catalog.iterrows():
+        total_skus = max(1, len(catalog))
+        for pos, (_, sku) in enumerate(catalog.iterrows()):
             item_id = sku["item_id"]
             store_id = sku["store_id"]
-            lead_time = 3 + (idx % 5)  # 3 to 7 days
+            lead_time = 3 + (pos % 5)  # 3 to 7 days
             review_period = int(inv_cfg["default_review_period_days"])
             retail_price = float(latest_prices.get((item_id, store_id), 5.0))
             unit_cost = round(retail_price * 0.65, 2)
@@ -402,14 +403,15 @@ def seed_sqlite(
             rop = lead_demand + safety_stock
             target_stock = review_demand + safety_stock
 
-            # Distribute SKUs across all 4 alert states from Section 8:
-            # 0-24: Healthy | 25-34: Reorder required | 35-42: Potential stockout | 43-49: Possible overstock
-            if idx < 25:
+            # Distribute SKUs proportionally across all 4 alert states from Section 8:
+            # < 0.50: Healthy (~50%) | < 0.70: Reorder required (~20%) | < 0.86: Stockout (~16%) | >= 0.86: Overstock (~14%)
+            ratio = pos / total_skus
+            if ratio < 0.50:
                 on_hand = max(1, int(round(target_stock * 1.1)))
                 on_order = 0
                 backorders = 0
                 note = "Seeded initial healthy stock"
-            elif idx < 35:
+            elif ratio < 0.70:
                 # IP <= ROP while keeping on_hand >= lead_demand (reorder required, not yet immediate stockout)
                 on_hand = max(1, int(math.ceil(lead_demand + 0.25 * safety_stock)))
                 if on_hand > int(math.floor(rop)):
@@ -417,10 +419,10 @@ def seed_sqlite(
                 on_order = 0
                 backorders = 0
                 note = "Seeded below reorder point"
-            elif idx < 43:
+            elif ratio < 0.86:
                 # On-hand < lead_demand -> Potential stockout
                 on_hand = max(0, int(math.floor(lead_demand * 0.45)))
-                on_order = int(round(review_demand * 0.3)) if idx % 2 == 0 else 0
+                on_order = int(round(review_demand * 0.3)) if pos % 2 == 0 else 0
                 backorders = 2 if on_hand == 0 else 0
                 note = "Seeded low stock / potential stockout"
             else:

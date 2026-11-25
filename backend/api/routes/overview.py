@@ -20,7 +20,7 @@ router = APIRouter(prefix="/api", tags=["overview"])
 @router.get("/overview", response_model=OverviewResponse)
 def get_overview(
     store_id: Optional[str] = Query(default=None),
-    days: int = Query(default=90, ge=7, le=400),
+    days: int = Query(default=90, ge=7, le=1000),
 ) -> OverviewResponse:
     """Return sales KPIs, simulated inventory KPIs, trend series, and urgent alerts."""
     df = get_sales_dataframe()

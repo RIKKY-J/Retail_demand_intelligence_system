@@ -16,7 +16,6 @@ from backend.src.analytics import get_sales_dataframe, load_model_metrics
 from backend.src.data_processing import (
     MODEL_FEATURE_COLS,
     build_horizon_features,
-    chronological_split_dates,
 )
 from backend.src.database import REPO_ROOT, db_session, get_db_path
 from backend.src.forecasting import predict_seasonal_naive
@@ -32,20 +31,24 @@ def _load_booster(model_path_str: str, mtime_ns: int) -> lgb.Booster:
 
 def _compute_sku_holdout_comparison(
     sku_df: pd.DataFrame,
+    global_max_date: pd.Timestamp,
     horizon_days: int = 28,
 ) -> list[dict]:
-    """Score the 28-day chronological holdout window for a single SKU using saved h28 booster."""
+    """Score the exact global 28-day chronological holdout window for a single SKU."""
     model_path = REPO_ROOT / "models" / "lgbm_h28.txt"
     if not model_path.exists() or len(sku_df) < 60:
         return []
 
-    _, test_start, max_date = chronological_split_dates(
-        sku_df, test_days=horizon_days, val_days=horizon_days
-    )
+    max_dt = pd.Timestamp(global_max_date)
+    test_start = max_dt - pd.Timedelta(days=horizon_days - 1)
     cutoff_date = test_start - pd.Timedelta(days=1)
 
     feat_df = build_horizon_features(sku_df, horizon=28)
-    holdout_feat = feat_df[feat_df["date"] >= test_start].sort_values("date").copy()
+    holdout_feat = (
+        feat_df[(feat_df["date"] >= test_start) & (feat_df["date"] <= max_dt)]
+        .sort_values("date")
+        .copy()
+    )
     if holdout_feat.empty:
         return []
 
@@ -146,6 +149,7 @@ def get_forecasts(
     forecasts = [by_date[d] for d in sorted(by_date.keys())]
 
     sales_df = get_sales_dataframe()
+    global_max_date = pd.Timestamp(sales_df["date"].max())
     sku_df = sales_df[
         (sales_df["store_id"].astype(str) == store_id)
         & (sales_df["item_id"].astype(str) == selected_item)
@@ -161,7 +165,11 @@ def get_forecasts(
         for r in hist_slice.itertuples(index=False)
     ]
 
-    holdout_comparison = _compute_sku_holdout_comparison(sku_df, horizon_days=28)
+    holdout_comparison = _compute_sku_holdout_comparison(
+        sku_df,
+        global_max_date=global_max_date,
+        horizon_days=28,
+    )
     metrics_doc = load_model_metrics()
     sku_rmse = float(
         metrics_doc.get("per_sku_val_rmse", {}).get(f"{store_id}::{selected_item}", 1.0)

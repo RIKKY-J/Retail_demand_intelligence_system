@@ -44,7 +44,7 @@ export function ForecastChart({ data }: { data: ForecastSeriesRow[] }) {
           <Area
             type="monotone"
             dataKey="lightgbm_p95"
-            name="LightGBM P95 Upper"
+            name="P95 Upper Estimate (RMSE-based)"
             fill="#dbeafe"
             stroke="#93c5fd"
             fillOpacity={0.45}

@@ -74,7 +74,7 @@ export function SidebarLayout({ children }: { children: React.ReactNode }) {
         {navLinks}
         <div className="border-t border-slate-200 p-4 text-xs text-slate-500">
           <div className="font-medium text-slate-700">M5 + LightGBM Tweedie</div>
-          <div className="mt-1">Store CA_1 · 50 Monitored SKUs</div>
+          <div className="mt-1">Store CA_1 · Direct Multi-Horizon Forecasting</div>
         </div>
       </aside>
 

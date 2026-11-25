@@ -95,7 +95,8 @@ export default function OverviewPage() {
             <option value={30}>Last 30 days</option>
             <option value={90}>Last 90 days</option>
             <option value={180}>Last 180 days</option>
-            <option value={400}>Full 400 days</option>
+            <option value={365}>Last 365 days</option>
+            <option value={913}>Full History (913d)</option>
           </select>
         </div>
       </div>

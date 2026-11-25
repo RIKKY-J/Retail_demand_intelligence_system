@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Data & Databases
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*.parquet
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Models (large trained artifacts can be regenerated; keep directory tracked)
+models/*.txt
+
+# Next.js / Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env*.local
+frontend/next-env.d.ts
+frontend/tsconfig.tsbuildinfo
+
+# Environment & OS
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

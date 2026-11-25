@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-11-25T16:47:59+00:00",
+  "split": {
+    "val_start": "2016-02-29",
+    "test_start": "2016-03-28",
+    "test_end": "2016-04-24",
+    "holdout_days": 28
+  },
+  "horizon_metrics": {
+    "h7": {
+      "horizon_days": 7,
+      "samples": 350,
+      "lightgbm": {
+        "mae": 1.9384,
+        "rmse": 2.576,
+        "wmape": 0.344,
+        "forecast_bias": -0.018
+      },
+      "seasonal_naive": {
+        "mae": 2.6971,
+        "rmse": 3.7094,
+        "wmape": 0.4787,
+        "forecast_bias": -0.0304
+      }
+    },
+    "h14": {
+      "horizon_days": 14,
+      "samples": 700,
+      "lightgbm": {
+        "mae": 1.9416,
+        "rmse": 2.5633,
+        "wmape": 0.3351,
+        "forecast_bias": -0.0257
+      },
+      "seasonal_naive": {
+        "mae": 2.66,
+        "rmse": 3.5992,
+        "wmape": 0.4591,
+        "forecast_bias": -0.0572
+      }
+    },
+    "h28": {
+      "horizon_days": 28,
+      "samples": 1400,
+      "lightgbm": {
+        "mae": 1.8592,
+        "rmse": 2.4851,
+        "wmape": 0.3373,
+        "forecast_bias": -0.0468
+      },
+      "seasonal_naive": {
+        "mae": 2.57,
+        "rmse": 3.4877,
+        "wmape": 0.4663,
+        "forecast_bias": -0.0088
+      }
+    }
+  },
+  "category_metrics_h28": {
+    "FOODS": {
+      "lightgbm": {
+        "mae": 2.4389,
+        "rmse": 3.1473,
+        "wmape": 0.2809,
+        "forecast_bias": -0.0683
+      },
+      "seasonal_naive": {
+        "mae": 3.2393,
+        "rmse": 4.2682,
+        "wmape": 0.3731,
+        "forecast_bias": -0.0325
+      }
+    },
+    "HOBBIES": {
+      "lightgbm": {
+        "mae": 1.4557,
+        "rmse": 1.9081,
+        "wmape": 0.4699,
+        "forecast_bias": -0.0068
+      },
+      "seasonal_naive": {
+        "mae": 1.969,
+        "rmse": 2.6722,
+        "wmape": 0.6357,
+        "forecast_bias": 0.0453
+      }
+    },
+    "HOUSEHOLD": {
+      "lightgbm": {
+        "mae": 1.4898,
+        "rmse": 1.9333,
+        "wmape": 0.4029,
+        "forecast_bias": -0.0129
+      },
+      "seasonal_naive": {
+        "mae": 2.2786,
+        "rmse": 3.0194,
+        "wmape": 0.6162,
+        "forecast_bias": 0.02
+      }
+    }
+  },
+  "per_sku_val_rmse": {
+    "CA_1::FOODS_1_001": 4.3428,
+    "CA_1::FOODS_1_002": 2.7646,
+    "CA_1::FOODS_1_003": 3.9573,
+    "CA_1::FOODS_1_004": 2.9447,
+    "CA_1::FOODS_1_005": 2.5352,
+    "CA_1::FOODS_1_006": 4.6437,
+    "CA_1::FOODS_2_001": 2.4626,
+    "CA_1::FOODS_2_002": 3.3781,
+    "CA_1::FOODS_2_003": 2.8115,
+    "CA_1::FOODS_2_004": 1.3097,
+    "CA_1::FOODS_2_005": 3.0223,
+    "CA_1::FOODS_2_006": 5.2729,
+    "CA_1::FOODS_3_001": 3.4402,
+    "CA_1::FOODS_3_002": 1.937,
+    "CA_1::FOODS_3_003": 2.3755,
+    "CA_1::FOODS_3_004": 1.8782,
+    "CA_1::FOODS_3_005": 1.8929,
+    "CA_1::FOODS_3_006": 2.8474,
+    "CA_1::FOODS_3_007": 3.0411,
+    "CA_1::FOODS_3_008": 2.7124,
+    "CA_1::HOBBIES_1_001": 3.0698,
+    "CA_1::HOBBIES_1_002": 1.4458,
+    "CA_1::HOBBIES_1_003": 1.2519,
+    "CA_1::HOBBIES_1_004": 1.4694,
+    "CA_1::HOBBIES_1_005": 1.6793,
+    "CA_1::HOBBIES_1_006": 2.1362,
+    "CA_1::HOBBIES_1_007": 2.1631,
+    "CA_1::HOBBIES_1_008": 2.1594,
+    "CA_1::HOBBIES_2_001": 1.3961,
+    "CA_1::HOBBIES_2_002": 1.2149,
+    "CA_1::HOBBIES_2_003": 1.8531,
+    "CA_1::HOBBIES_2_004": 1.0667,
+    "CA_1::HOBBIES_2_005": 2.0485,
+    "CA_1::HOBBIES_2_006": 2.4346,
+    "CA_1::HOBBIES_2_007": 0.7867,
+    "CA_1::HOUSEHOLD_1_001": 2.1637,
+    "CA_1::HOUSEHOLD_1_002": 2.2845,
+    "CA_1::HOUSEHOLD_1_003": 2.719,
+    "CA_1::HOUSEHOLD_1_004": 2.6833,
+    "CA_1::HOUSEHOLD_1_005": 2.4511,
+    "CA_1::HOUSEHOLD_1_006": 1.9605,
+    "CA_1::HOUSEHOLD_1_007": 2.2281,
+    "CA_1::HOUSEHOLD_1_008": 2.8045,
+    "CA_1::HOUSEHOLD_2_001": 1.3293,
+    "CA_1::HOUSEHOLD_2_002": 1.5024,
+    "CA_1::HOUSEHOLD_2_003": 1.6047,
+    "CA_1::HOUSEHOLD_2_004": 1.8499,
+    "CA_1::HOUSEHOLD_2_005": 1.6624,
+    "CA_1::HOUSEHOLD_2_006": 3.3446,
+    "CA_1::HOUSEHOLD_2_007": 1.9403
+  },
+  "per_sku_baseline_val_rmse": {
+    "CA_1::FOODS_1_001": 6.3724,
+    "CA_1::FOODS_1_002": 4.3425,
+    "CA_1::FOODS_1_003": 5.8615,
+    "CA_1::FOODS_1_004": 3.9506,
+    "CA_1::FOODS_1_005": 4.1576,
+    "CA_1::FOODS_1_006": 8.0512,
+    "CA_1::FOODS_2_001": 4.149,
+    "CA_1::FOODS_2_002": 4.9063,
+    "CA_1::FOODS_2_003": 4.496,
+    "CA_1::FOODS_2_004": 1.7423,
+    "CA_1::FOODS_2_005": 5.6726,
+    "CA_1::FOODS_2_006": 7.6322,
+    "CA_1::FOODS_3_001": 4.6483,
+    "CA_1::FOODS_3_002": 2.5843,
+    "CA_1::FOODS_3_003": 3.1339,
+    "CA_1::FOODS_3_004": 2.4128,
+    "CA_1::FOODS_3_005": 2.8158,
+    "CA_1::FOODS_3_006": 3.322,
+    "CA_1::FOODS_3_007": 4.4561,
+    "CA_1::FOODS_3_008": 3.9461,
+    "CA_1::HOBBIES_1_001": 4.8292,
+    "CA_1::HOBBIES_1_002": 2.3376,
+    "CA_1::HOBBIES_1_003": 1.5353,
+    "CA_1::HOBBIES_1_004": 1.973,
+    "CA_1::HOBBIES_1_005": 1.9548,
+    "CA_1::HOBBIES_1_006": 3.1904,
+    "CA_1::HOBBIES_1_007": 2.5355,
+    "CA_1::HOBBIES_1_008": 2.4495,
+    "CA_1::HOBBIES_2_001": 1.8127,
+    "CA_1::HOBBIES_2_002": 1.5469,
+    "CA_1::HOBBIES_2_003": 3.0589,
+    "CA_1::HOBBIES_2_004": 1.1802,
+    "CA_1::HOBBIES_2_005": 2.3376,
+    "CA_1::HOBBIES_2_006": 2.4713,
+    "CA_1::HOBBIES_2_007": 0.8452,
+    "CA_1::HOUSEHOLD_1_001": 2.897,
+    "CA_1::HOUSEHOLD_1_002": 3.3274,
+    "CA_1::HOUSEHOLD_1_003": 3.4382,
+    "CA_1::HOUSEHOLD_1_004": 4.0089,
+    "CA_1::HOUSEHOLD_1_005": 3.0764,
+    "CA_1::HOUSEHOLD_1_006": 2.3604,
+    "CA_1::HOUSEHOLD_1_007": 2.8598,
+    "CA_1::HOUSEHOLD_1_008": 3.4538,
+    "CA_1::HOUSEHOLD_2_001": 2.0,
+    "CA_1::HOUSEHOLD_2_002": 2.0089,
+    "CA_1::HOUSEHOLD_2_003": 3.0531,
+    "CA_1::HOUSEHOLD_2_004": 2.9881,
+    "CA_1::HOUSEHOLD_2_005": 2.2039,
+    "CA_1::HOUSEHOLD_2_006": 4.1361,
+    "CA_1::HOUSEHOLD_2_007": 2.3979
+  },
+  "policy_backtest_28d": {
+    "unmet_demand_mode": "lost_sales",
+    "service_level_z": 1.645,
+    "review_period_days": 7,
+    "annual_holding_rate": 0.25,
+    "stockout_penalty_multiplier": 0.35,
+    "seasonal_naive": {
+      "skus_evaluated": 50,
+      "total_actual_demand": 7716.0,
+      "total_served_units": 7592.0,
+      "total_lost_sales": 124.0,
+      "fill_rate_pct": 98.39,
+      "avg_daily_on_hand_per_sku": 30.85,
+      "avg_total_daily_on_hand": 1542.55,
+      "holding_cost": 150.73,
+      "stockout_cost": 213.5,
+      "total_policy_cost": 364.23,
+      "stockout_sku_days": 36,
+      "orders_placed": 212
+    },
+    "lightgbm": {
+      "skus_evaluated": 50,
+      "total_actual_demand": 7716.0,
+      "total_served_units": 7571.0,
+      "total_lost_sales": 145.0,
+      "fill_rate_pct": 98.12,
+      "avg_daily_on_hand_per_sku": 25.84,
+      "avg_total_daily_on_hand": 1292.08,
+      "holding_cost": 127.76,
+      "stockout_cost": 231.91,
+      "total_policy_cost": 359.66,
+      "stockout_sku_days": 37,
+      "orders_placed": 212
+    },
+    "comparison": {
+      "lost_sales_reduction_units": -21.0,
+      "lost_sales_reduction_pct": -16.94,
+      "fill_rate_delta_pct": -0.27,
+      "avg_on_hand_delta_per_sku": -5.01,
+      "holding_cost_delta": -22.97,
+      "stockout_cost_delta": 18.41,
+      "total_policy_cost_savings": 4.57,
+      "total_policy_cost_savings_pct": 1.25
+    }
+  }
+}

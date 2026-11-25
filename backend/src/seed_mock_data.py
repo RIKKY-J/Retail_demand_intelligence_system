@@ -381,11 +381,19 @@ def seed_sqlite(
             ],
         )
 
-        # 3. inventory & inventory_transactions (proportional status distribution across any SKU count)
+        # 3. inventory & inventory_transactions (round-robin interleaved across categories)
         inv_rows = []
         txn_rows = []
         total_skus = max(1, len(catalog))
-        for pos, (_, sku) in enumerate(catalog.iterrows()):
+        interleaved_catalog = (
+            catalog.assign(
+                _cat_seq=catalog.groupby("cat_id", sort=True).cumcount(),
+            )
+            .sort_values(["_cat_seq", "cat_id", "item_id"])
+            .drop(columns=["_cat_seq"])
+            .reset_index(drop=True)
+        )
+        for pos, (_, sku) in enumerate(interleaved_catalog.iterrows()):
             item_id = sku["item_id"]
             store_id = sku["store_id"]
             lead_time = 3 + (pos % 5)  # 3 to 7 days

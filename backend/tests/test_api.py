@@ -5,6 +5,8 @@ from __future__ import annotations
 from fastapi.testclient import TestClient
 
 from backend.api.main import app
+from backend.src.database import db_session
+from backend.src.inventory import load_inventory_config
 
 client = TestClient(app)
 
@@ -49,11 +51,21 @@ def test_inventory_get_and_patch_persistence() -> None:
         assert updated["on_hand"] == orig_on_hand + 10
         assert updated["lead_time_days"] == orig_lead + 1
     finally:
-        # Restore original values so seeded state remains clean
+        # Restore original values and remove temporary API test transaction rows
         client.patch(
             f"/api/inventory/{store_id}/{item_id}",
             json={"on_hand": orig_on_hand, "lead_time_days": orig_lead, "notes": "API test restore"},
         )
+        cfg = load_inventory_config()
+        with db_session(cfg["storage"]["database_path"]) as conn:
+            conn.execute(
+                """
+                DELETE FROM inventory_transactions
+                WHERE store_id = ? AND item_id = ?
+                  AND notes IN ('API test patch', 'API test restore')
+                """,
+                (store_id, item_id),
+            )
 
 
 def test_forecasts_analytics_alerts_evaluation_endpoints() -> None:

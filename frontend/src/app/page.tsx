@@ -119,7 +119,7 @@ export default function OverviewPage() {
         <KpiCard
           title="Reorder Alerts"
           value={kpis.reorder_alerts}
-          subtitle={`${kpis.recommended_order_units.toLocaleString()} units suggested`}
+          subtitle={`${kpis.recommended_order_units.toLocaleString()} units suggested (incl. stockout-risk SKUs below ROP)`}
           accent="amber"
           icon={<ShoppingCart className="h-4 w-4" />}
         />

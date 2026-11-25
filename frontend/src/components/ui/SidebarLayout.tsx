@@ -4,25 +4,19 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  AlertTriangle,
-  BarChart3,
   Boxes,
   LayoutDashboard,
   LineChart,
   Menu,
-  ShieldCheck,
   TrendingUp,
   X,
 } from "lucide-react";
 import { SimulatedBadge } from "@/components/inventory/SimulatedBadge";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Overview", icon: LayoutDashboard },
-  { href: "/inventory", label: "Inventory", icon: Boxes },
-  { href: "/forecasting", label: "Forecasting", icon: TrendingUp },
-  { href: "/analytics", label: "Sales Analytics", icon: BarChart3 },
-  { href: "/alerts", label: "Stock Alerts", icon: AlertTriangle },
-  { href: "/evaluation", label: "Model & Backtest", icon: ShieldCheck },
+  { href: "/", label: "Overview & Models", icon: LayoutDashboard },
+  { href: "/forecast", label: "7-Day Forecast", icon: TrendingUp },
+  { href: "/inventory", label: "Inventory & Alerts", icon: Boxes },
 ];
 
 export function SidebarLayout({ children }: { children: React.ReactNode }) {
@@ -56,7 +50,6 @@ export function SidebarLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex min-h-screen bg-slate-50 text-slate-900">
-      {/* Desktop Sidebar */}
       <aside className="hidden w-64 shrink-0 flex-col border-r border-slate-200 bg-white lg:flex">
         <div className="flex h-16 items-center gap-2.5 border-b border-slate-200 px-5">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white">
@@ -67,18 +60,17 @@ export function SidebarLayout({ children }: { children: React.ReactNode }) {
               RetailPulse AI
             </div>
             <div className="text-[11px] text-slate-500">
-              Demand & Inventory
+              Demand & Inventory ML
             </div>
           </div>
         </div>
         {navLinks}
         <div className="border-t border-slate-200 p-4 pb-14 text-xs text-slate-500">
-          <div className="font-medium text-slate-700">M5 + LightGBM Tweedie</div>
-          <div className="mt-1">Store CA_1 · Direct Multi-Horizon Forecasting</div>
+          <div className="font-medium text-slate-700">M5 Store CA_1 (60 SKUs)</div>
+          <div className="mt-1">7-Day Demand Forecasting</div>
         </div>
       </aside>
 
-      {/* Mobile Drawer */}
       {mobileOpen && (
         <div className="fixed inset-0 z-40 flex lg:hidden">
           <div
@@ -87,9 +79,7 @@ export function SidebarLayout({ children }: { children: React.ReactNode }) {
           />
           <aside className="relative z-50 flex w-64 flex-col bg-white shadow-xl">
             <div className="flex h-16 items-center justify-between border-b border-slate-200 px-4">
-              <span className="text-sm font-bold text-slate-900">
-                RetailPulse AI
-              </span>
+              <span className="text-sm font-bold text-slate-900">RetailPulse AI</span>
               <button
                 type="button"
                 onClick={() => setMobileOpen(false)}
@@ -104,7 +94,6 @@ export function SidebarLayout({ children }: { children: React.ReactNode }) {
         </div>
       )}
 
-      {/* Main Content Area */}
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="sticky top-0 z-20 flex h-16 items-center justify-between border-b border-slate-200 bg-white/95 px-4 backdrop-blur sm:px-6">
           <div className="flex items-center gap-3">
@@ -117,12 +106,10 @@ export function SidebarLayout({ children }: { children: React.ReactNode }) {
               <Menu className="h-5 w-5" />
             </button>
             <h1 className="text-sm font-semibold text-slate-800 sm:text-base">
-              AI-Powered Retail Inventory & Demand Prediction
+              Retail Demand Forecasting & Inventory Management
             </h1>
           </div>
-          <div className="flex items-center gap-3">
-            <SimulatedBadge />
-          </div>
+          <SimulatedBadge />
         </header>
 
         <main className="flex-1 p-4 sm:p-6 lg:p-8">{children}</main>

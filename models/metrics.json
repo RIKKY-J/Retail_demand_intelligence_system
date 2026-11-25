@@ -1,0 +1,8619 @@
+{
+  "best_model": "Linear Regression",
+  "split": {
+    "train_end": "2016-03-27",
+    "test_start": "2016-03-28",
+    "test_end": "2016-04-24",
+    "test_days": 28
+  },
+  "model_comparison": [
+    {
+      "model": "7-Day Moving Average",
+      "mae": 1.3489,
+      "rmse": 2.843,
+      "wmape": 0.8523
+    },
+    {
+      "model": "Linear Regression",
+      "mae": 1.3014,
+      "rmse": 2.7015,
+      "wmape": 0.8222
+    },
+    {
+      "model": "Random Forest",
+      "mae": 1.3068,
+      "rmse": 2.7278,
+      "wmape": 0.8257
+    },
+    {
+      "model": "LightGBM",
+      "mae": 1.3013,
+      "rmse": 2.7431,
+      "wmape": 0.8222
+    }
+  ],
+  "per_sku_rmse": {
+    "FOODS_1_001": 1.3371,
+    "FOODS_1_002": 0.7632,
+    "FOODS_1_003": 1.0206,
+    "FOODS_1_004": 0.1934,
+    "FOODS_1_005": 1.1693,
+    "FOODS_1_006": 1.65,
+    "FOODS_1_008": 0.4101,
+    "FOODS_1_009": 0.2163,
+    "FOODS_1_010": 0.7189,
+    "FOODS_1_011": 1.2638,
+    "FOODS_1_012": 2.1249,
+    "FOODS_1_013": 2.5275,
+    "FOODS_1_014": 1.1934,
+    "FOODS_1_015": 0.8581,
+    "FOODS_1_016": 0.6517,
+    "FOODS_1_017": 0.8805,
+    "FOODS_1_018": 6.4675,
+    "FOODS_1_019": 7.3104,
+    "FOODS_1_020": 0.991,
+    "FOODS_1_021": 1.7806,
+    "HOBBIES_1_001": 1.1413,
+    "HOBBIES_1_002": 0.4233,
+    "HOBBIES_1_003": 0.7241,
+    "HOBBIES_1_004": 1.7428,
+    "HOBBIES_1_005": 1.257,
+    "HOBBIES_1_006": 1.237,
+    "HOBBIES_1_007": 0.5825,
+    "HOBBIES_1_008": 10.9663,
+    "HOBBIES_1_009": 1.7612,
+    "HOBBIES_1_010": 0.9131,
+    "HOBBIES_1_011": 0.3521,
+    "HOBBIES_1_012": 0.4431,
+    "HOBBIES_1_013": 0.6399,
+    "HOBBIES_1_014": 1.4245,
+    "HOBBIES_1_015": 2.6591,
+    "HOBBIES_1_016": 6.3235,
+    "HOBBIES_1_017": 1.7416,
+    "HOBBIES_1_018": 0.1509,
+    "HOBBIES_1_019": 9.6241,
+    "HOBBIES_1_020": 0.423,
+    "HOUSEHOLD_1_001": 0.5652,
+    "HOUSEHOLD_1_002": 0.2714,
+    "HOUSEHOLD_1_003": 0.9308,
+    "HOUSEHOLD_1_004": 2.0172,
+    "HOUSEHOLD_1_005": 1.2028,
+    "HOUSEHOLD_1_006": 1.5517,
+    "HOUSEHOLD_1_007": 1.893,
+    "HOUSEHOLD_1_008": 0.7302,
+    "HOUSEHOLD_1_009": 0.5823,
+    "HOUSEHOLD_1_010": 1.4312,
+    "HOUSEHOLD_1_011": 1.2649,
+    "HOUSEHOLD_1_012": 1.0724,
+    "HOUSEHOLD_1_013": 1.3682,
+    "HOUSEHOLD_1_014": 0.698,
+    "HOUSEHOLD_1_015": 0.3499,
+    "HOUSEHOLD_1_016": 2.2955,
+    "HOUSEHOLD_1_017": 0.4564,
+    "HOUSEHOLD_1_018": 1.0694,
+    "HOUSEHOLD_1_019": 2.7085,
+    "HOUSEHOLD_1_020": 1.0431
+  },
+  "holdout_series": {
+    "FOODS_1_001": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 2,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 0.6
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 1,
+        "predicted_sales": 0.73
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.91
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 4,
+        "predicted_sales": 0.94
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 1.12
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 1.15
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 4,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 3,
+        "predicted_sales": 0.96
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 1.1
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 2,
+        "predicted_sales": 1.08
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 1.1
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 1.0
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 1.08
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 1.54
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 2,
+        "predicted_sales": 1.18
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 4,
+        "predicted_sales": 1.27
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 1.3
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 1.06
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 1.16
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 1.21
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 1.34
+      }
+    ],
+    "FOODS_1_002": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.11
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 0.33
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.36
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.11
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.33
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.34
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.49
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.26
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 0.29
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 0.36
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 3,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 0.47
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.12
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.13
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 0.26
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 2,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.32
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.52
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.53
+      }
+    ],
+    "FOODS_1_003": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 4,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.8
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 0.69
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.88
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.83
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.86
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 0.75
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 0.76
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.97
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 2,
+        "predicted_sales": 0.69
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.88
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 3,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 2,
+        "predicted_sales": 0.96
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 0.6
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.96
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 1.02
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 1.04
+      }
+    ],
+    "FOODS_1_004": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.01
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.08
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.2
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.34
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.07
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.13
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.2
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.34
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.07
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.14
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.21
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.07
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.14
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.21
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      }
+    ],
+    "FOODS_1_005": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 1.07
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 1.43
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 3,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 1.42
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 1.78
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 2,
+        "predicted_sales": 1.18
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 1.36
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 1.12
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 3,
+        "predicted_sales": 1.19
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 1.39
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 2,
+        "predicted_sales": 1.51
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 1.67
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 1.2
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 1.14
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 1.09
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 2,
+        "predicted_sales": 1.3
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 3,
+        "predicted_sales": 1.51
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 1.29
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 2,
+        "predicted_sales": 1.11
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.85
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 2,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 2,
+        "predicted_sales": 1.33
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 4,
+        "predicted_sales": 1.4
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 1.24
+      }
+    ],
+    "FOODS_1_006": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 3,
+        "predicted_sales": 1.92
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 1.8
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 2,
+        "predicted_sales": 2.11
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 3,
+        "predicted_sales": 1.76
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 1.93
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 2.4
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 1.75
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 1.37
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 2,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 8,
+        "predicted_sales": 1.46
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 3,
+        "predicted_sales": 1.57
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 2,
+        "predicted_sales": 1.87
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 3,
+        "predicted_sales": 1.64
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 1.86
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 1.58
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 1.38
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 1.96
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 2,
+        "predicted_sales": 2.04
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 1.89
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 3,
+        "predicted_sales": 2.05
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 2.08
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 1.49
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 1.62
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 2.08
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 2,
+        "predicted_sales": 1.78
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 3,
+        "predicted_sales": 1.69
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 1.79
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 2,
+        "predicted_sales": 1.52
+      }
+    ],
+    "FOODS_1_008": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.07
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.14
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.54
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.41
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.52
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 0.55
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.22
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.62
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.55
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.67
+      }
+    ],
+    "FOODS_1_009": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.04
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.02
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      }
+    ],
+    "FOODS_1_010": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.12
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.19
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.25
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.32
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 0.39
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 0.04
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 3,
+        "predicted_sales": 0.11
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.18
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.25
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.32
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.01
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.14
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.34
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.41
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.08
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.21
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      }
+    ],
+    "FOODS_1_011": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 2,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 3,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 4,
+        "predicted_sales": 0.59
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 0.69
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 2,
+        "predicted_sales": 0.76
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 0.8
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.9
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 0.87
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.92
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 0.92
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 1.05
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 0.75
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 0.97
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 1.08
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.94
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 2,
+        "predicted_sales": 1.05
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.08
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.54
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 3,
+        "predicted_sales": 0.77
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 2,
+        "predicted_sales": 0.68
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 3,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 1.1
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 1.01
+      }
+    ],
+    "FOODS_1_012": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 7,
+        "predicted_sales": 3.14
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 2,
+        "predicted_sales": 3.12
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 2,
+        "predicted_sales": 3.28
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 2,
+        "predicted_sales": 3.43
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 3.03
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 2,
+        "predicted_sales": 3.29
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 3.56
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 4,
+        "predicted_sales": 3.17
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 3,
+        "predicted_sales": 3.32
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 5,
+        "predicted_sales": 3.06
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 4,
+        "predicted_sales": 3.15
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 3.12
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 5,
+        "predicted_sales": 3.32
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 3.85
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 3,
+        "predicted_sales": 3.27
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 2.71
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 2,
+        "predicted_sales": 2.96
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 2.85
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 2.61
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 3.09
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 6,
+        "predicted_sales": 2.71
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 5,
+        "predicted_sales": 2.7
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 2.61
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 2,
+        "predicted_sales": 2.83
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 5,
+        "predicted_sales": 2.59
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 6,
+        "predicted_sales": 2.39
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 2.68
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 4,
+        "predicted_sales": 2.7
+      }
+    ],
+    "FOODS_1_013": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 2.58
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 2.14
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.84
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 1.92
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 2.09
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 2.24
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 2.32
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 3,
+        "predicted_sales": 1.69
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 5,
+        "predicted_sales": 2.11
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 2,
+        "predicted_sales": 1.9
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 2.11
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 8,
+        "predicted_sales": 2.08
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 4,
+        "predicted_sales": 2.06
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 3,
+        "predicted_sales": 2.32
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 1.68
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 6,
+        "predicted_sales": 1.89
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 6,
+        "predicted_sales": 1.84
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 1.76
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 2,
+        "predicted_sales": 2.23
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 1.99
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 3,
+        "predicted_sales": 2.3
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 1.63
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 2.19
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 4,
+        "predicted_sales": 2.13
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 2.0
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 4,
+        "predicted_sales": 2.78
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 9,
+        "predicted_sales": 2.35
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 2.48
+      }
+    ],
+    "FOODS_1_014": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 1.46
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 1.65
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 2,
+        "predicted_sales": 1.53
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 1.82
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 2,
+        "predicted_sales": 1.67
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 2,
+        "predicted_sales": 2.0
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 1.94
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 1.46
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 1.7
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 1.53
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 1.74
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.54
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 2,
+        "predicted_sales": 2.11
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 2,
+        "predicted_sales": 1.76
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 4,
+        "predicted_sales": 1.26
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 1.47
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 1.29
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 1.6
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 1.7
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.68
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 1.4
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 1.31
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.37
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 1.54
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 1.57
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 3,
+        "predicted_sales": 1.76
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 2,
+        "predicted_sales": 1.79
+      }
+    ],
+    "FOODS_1_015": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.57
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.92
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 1.01
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 1.01
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 1.4
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.96
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.55
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.68
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 0.87
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 1.01
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 0.95
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.9
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.66
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 0.86
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.44
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 0.76
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 0.73
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.85
+      }
+    ],
+    "FOODS_1_016": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.72
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.86
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.88
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.87
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.57
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.61
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.67
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.66
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.2
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.02
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 0.43
+      }
+    ],
+    "FOODS_1_017": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.83
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.08
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 1.09
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 1.06
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 1.31
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.83
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.86
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 2,
+        "predicted_sales": 1.11
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.03
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 2,
+        "predicted_sales": 1.31
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 1.19
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.75
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.9
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 2,
+        "predicted_sales": 1.03
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 2,
+        "predicted_sales": 1.11
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.14
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.67
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.68
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.76
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 0.97
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 1.07
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 4,
+        "predicted_sales": 1.11
+      }
+    ],
+    "FOODS_1_018": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 6,
+        "predicted_sales": 8.23
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 4,
+        "predicted_sales": 8.51
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 5,
+        "predicted_sales": 8.2
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 15,
+        "predicted_sales": 8.89
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 17,
+        "predicted_sales": 9.72
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 16,
+        "predicted_sales": 11.75
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 16,
+        "predicted_sales": 11.83
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 3,
+        "predicted_sales": 9.95
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 5,
+        "predicted_sales": 9.77
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 4,
+        "predicted_sales": 9.34
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 2,
+        "predicted_sales": 10.5
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 11,
+        "predicted_sales": 10.97
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 5,
+        "predicted_sales": 14.1
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 5,
+        "predicted_sales": 11.57
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 3,
+        "predicted_sales": 9.49
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 9.33
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 5,
+        "predicted_sales": 9.38
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 11,
+        "predicted_sales": 10.1
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 4,
+        "predicted_sales": 10.55
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 7,
+        "predicted_sales": 9.79
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 6,
+        "predicted_sales": 9.87
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 6,
+        "predicted_sales": 8.14
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 5,
+        "predicted_sales": 8.27
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 8.41
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 9,
+        "predicted_sales": 8.65
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 25,
+        "predicted_sales": 9.06
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 22,
+        "predicted_sales": 8.5
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 13,
+        "predicted_sales": 8.11
+      }
+    ],
+    "FOODS_1_019": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 3,
+        "predicted_sales": 5.78
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 3,
+        "predicted_sales": 5.77
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 3,
+        "predicted_sales": 6.52
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 14,
+        "predicted_sales": 6.87
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 16,
+        "predicted_sales": 7.77
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 9,
+        "predicted_sales": 7.79
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 13,
+        "predicted_sales": 7.89
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 8,
+        "predicted_sales": 6.93
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 6.66
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 7.41
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 24,
+        "predicted_sales": 7.41
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 9,
+        "predicted_sales": 8.62
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 8,
+        "predicted_sales": 8.42
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 7,
+        "predicted_sales": 8.06
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 8,
+        "predicted_sales": 6.79
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 6.56
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 6.54
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 9.01
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 9,
+        "predicted_sales": 8.69
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 19,
+        "predicted_sales": 7.89
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 8.46
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 8,
+        "predicted_sales": 7.77
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 10,
+        "predicted_sales": 6.84
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 27,
+        "predicted_sales": 6.97
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 2,
+        "predicted_sales": 9.04
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 4,
+        "predicted_sales": 7.91
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 15,
+        "predicted_sales": 8.49
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 18,
+        "predicted_sales": 7.59
+      }
+    ],
+    "FOODS_1_020": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 1.02
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 1.33
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 1,
+        "predicted_sales": 1.28
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 1.38
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 2,
+        "predicted_sales": 1.78
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 1.46
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.94
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 1.1
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 1.23
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.44
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 1.81
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 2,
+        "predicted_sales": 1.54
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 1.02
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 0.98
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 3,
+        "predicted_sales": 1.14
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 1.21
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 4,
+        "predicted_sales": 1.19
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 1.39
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.87
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 0.85
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.05
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 2,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 1.46
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 1.41
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 1.59
+      }
+    ],
+    "FOODS_1_021": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 2.12
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 3,
+        "predicted_sales": 2.1
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 2.41
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 2.47
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 6,
+        "predicted_sales": 2.27
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 4,
+        "predicted_sales": 2.55
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 2.69
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 1.57
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 1.74
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 1.71
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 2.37
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 2.38
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 2.24
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 2.3
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 1.75
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 2.06
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 4,
+        "predicted_sales": 1.85
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 1.9
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 2,
+        "predicted_sales": 2.39
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 2.21
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 2.07
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 1.47
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 1.48
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.62
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 4,
+        "predicted_sales": 1.67
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 1.74
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 3,
+        "predicted_sales": 1.7
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 3,
+        "predicted_sales": 1.6
+      }
+    ],
+    "HOBBIES_1_001": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.9
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.0
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 1.0
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 1.27
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 1.07
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 1.29
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.72
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 4,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 2,
+        "predicted_sales": 0.85
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 3,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 0.9
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 2,
+        "predicted_sales": 1.0
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.83
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 0.88
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 3,
+        "predicted_sales": 1.01
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.26
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.69
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 1.09
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 0.94
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 3,
+        "predicted_sales": 1.13
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.87
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 1.16
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 1.13
+      }
+    ],
+    "HOBBIES_1_002": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 0.07
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.13
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.2
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.59
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.21
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.25
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.32
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.62
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.18
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.34
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.04
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.11
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      }
+    ],
+    "HOBBIES_1_003": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.49
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 0.74
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.33
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.47
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.69
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.6
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.61
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 2,
+        "predicted_sales": 0.36
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 2,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 0.44
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 2,
+        "predicted_sales": 0.57
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.07
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 0.14
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.52
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 0.6
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 0.76
+      }
+    ],
+    "HOBBIES_1_004": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 1.56
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.54
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 1.95
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 3,
+        "predicted_sales": 1.84
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 2.09
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 2.09
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 1.74
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 3,
+        "predicted_sales": 1.53
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 1.77
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 1.98
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 2,
+        "predicted_sales": 1.78
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 5,
+        "predicted_sales": 2.31
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 4,
+        "predicted_sales": 2.32
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 1.28
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 1.48
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 3,
+        "predicted_sales": 1.51
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 1.55
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 2.01
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 2.11
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 5,
+        "predicted_sales": 2.3
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 4,
+        "predicted_sales": 1.71
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 1.88
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.93
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 1.72
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 3,
+        "predicted_sales": 1.93
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 7,
+        "predicted_sales": 2.17
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 2,
+        "predicted_sales": 2.42
+      }
+    ],
+    "HOBBIES_1_005": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 1.11
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 1.21
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 4,
+        "predicted_sales": 1.24
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 4,
+        "predicted_sales": 1.1
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 1.4
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 4,
+        "predicted_sales": 1.38
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 1.0
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 1.06
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 1.17
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 1.26
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 1.2
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 1.3
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 1.59
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 1.09
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 1.1
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 1.47
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 1.59
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 2,
+        "predicted_sales": 1.17
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 1.37
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 1.7
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.96
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 1.03
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 1.04
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 2,
+        "predicted_sales": 1.23
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 1.32
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 4,
+        "predicted_sales": 1.36
+      }
+    ],
+    "HOBBIES_1_006": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.87
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 1.06
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 3,
+        "predicted_sales": 0.92
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 1.5
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 1.06
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 1.32
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 1.12
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 3,
+        "predicted_sales": 1.16
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.2
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 1.19
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 0.75
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 4,
+        "predicted_sales": 0.91
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 1.31
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 1.06
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.06
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.17
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.83
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 1.0
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 1.04
+      }
+    ],
+    "HOBBIES_1_007": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 0.26
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 2,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.44
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.6
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.55
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 0.59
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 0.63
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 0.47
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.55
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.54
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.61
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.39
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 0.55
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 0.61
+      }
+    ],
+    "HOBBIES_1_008": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 4.7
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 11,
+        "predicted_sales": 5.33
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 5,
+        "predicted_sales": 5.42
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 2,
+        "predicted_sales": 5.0
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 12,
+        "predicted_sales": 6.18
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 38,
+        "predicted_sales": 5.21
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 22,
+        "predicted_sales": 4.26
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 2,
+        "predicted_sales": 4.03
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 5.76
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 10,
+        "predicted_sales": 5.46
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 26,
+        "predicted_sales": 4.75
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 8,
+        "predicted_sales": 5.32
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 12,
+        "predicted_sales": 7.38
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 4,
+        "predicted_sales": 7.58
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 5,
+        "predicted_sales": 6.58
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 7.45
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 8,
+        "predicted_sales": 6.86
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 4,
+        "predicted_sales": 7.93
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 8.47
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 10.79
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 8.43
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 37,
+        "predicted_sales": 6.26
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 3,
+        "predicted_sales": 6.08
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 4,
+        "predicted_sales": 7.42
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 6,
+        "predicted_sales": 8.86
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 3,
+        "predicted_sales": 6.66
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 6.77
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 6.15
+      }
+    ],
+    "HOBBIES_1_009": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.8
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 2,
+        "predicted_sales": 0.32
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 2,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 3,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.67
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 0.68
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 0.94
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 7,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.69
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.85
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 1.16
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 6,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.62
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.69
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.76
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.92
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 1.05
+      }
+    ],
+    "HOBBIES_1_010": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 0.48
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 1,
+        "predicted_sales": 0.49
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 0.57
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 3,
+        "predicted_sales": 0.96
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 2,
+        "predicted_sales": 0.25
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 2,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.55
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 0.62
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.66
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.92
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 0.54
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.73
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 0.95
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.87
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.2
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.73
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.76
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.73
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 2,
+        "predicted_sales": 0.81
+      }
+    ],
+    "HOBBIES_1_011": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.2
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.34
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.44
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.6
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.18
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.46
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.44
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.41
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.52
+      }
+    ],
+    "HOBBIES_1_012": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 0.05
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.12
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.19
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.25
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.14
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 0.21
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.34
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.47
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 0.13
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.11
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.32
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.39
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 0.46
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.11
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.14
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.39
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.52
+      }
+    ],
+    "HOBBIES_1_013": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.67
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 0.67
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 0.69
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.47
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.57
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.52
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 0.62
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 0.61
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 2,
+        "predicted_sales": 0.59
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 2,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.39
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.44
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 0.8
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 0.91
+      }
+    ],
+    "HOBBIES_1_014": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 3,
+        "predicted_sales": 1.96
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 2.35
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.9
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 1.79
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 2,
+        "predicted_sales": 2.13
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 1.91
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 2.41
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 3,
+        "predicted_sales": 2.03
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 1.81
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 2,
+        "predicted_sales": 1.96
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 5,
+        "predicted_sales": 1.83
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 2,
+        "predicted_sales": 2.18
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 1.97
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 2.33
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 1.84
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 1.57
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 4,
+        "predicted_sales": 1.68
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 2.03
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 2.04
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 2,
+        "predicted_sales": 1.92
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 2,
+        "predicted_sales": 2.08
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 1.67
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 1.36
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.74
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 2.1
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 3,
+        "predicted_sales": 1.73
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 1.74
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 1.91
+      }
+    ],
+    "HOBBIES_1_015": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 4,
+        "predicted_sales": 3.32
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 3.15
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 4,
+        "predicted_sales": 3.25
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 2,
+        "predicted_sales": 3.4
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 10,
+        "predicted_sales": 3.41
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 3.35
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 3.47
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 3.33
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 4,
+        "predicted_sales": 3.03
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 2,
+        "predicted_sales": 3.43
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 2,
+        "predicted_sales": 3.51
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 3,
+        "predicted_sales": 3.58
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 10,
+        "predicted_sales": 3.17
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 2,
+        "predicted_sales": 3.42
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 2.94
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 2.81
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 8,
+        "predicted_sales": 3.14
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 2.69
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 3.58
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 4,
+        "predicted_sales": 3.1
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 2,
+        "predicted_sales": 3.05
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 2,
+        "predicted_sales": 2.53
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 2.83
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 3.08
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 2.98
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 2.97
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 5,
+        "predicted_sales": 3.79
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 4,
+        "predicted_sales": 3.05
+      }
+    ],
+    "HOBBIES_1_016": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 2,
+        "predicted_sales": 4.26
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 3,
+        "predicted_sales": 5.06
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 6,
+        "predicted_sales": 3.82
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 4,
+        "predicted_sales": 4.53
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 32,
+        "predicted_sales": 5.0
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 6.19
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 6,
+        "predicted_sales": 5.22
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 3,
+        "predicted_sales": 4.42
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 9,
+        "predicted_sales": 4.19
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 4.41
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 6,
+        "predicted_sales": 5.36
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 6,
+        "predicted_sales": 6.37
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 5,
+        "predicted_sales": 6.56
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 5.76
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 3,
+        "predicted_sales": 4.99
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 4,
+        "predicted_sales": 5.47
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 4,
+        "predicted_sales": 5.51
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 9,
+        "predicted_sales": 5.72
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 5,
+        "predicted_sales": 8.39
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 6,
+        "predicted_sales": 5.47
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 15,
+        "predicted_sales": 5.77
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 9,
+        "predicted_sales": 5.2
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 4,
+        "predicted_sales": 5.55
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 4,
+        "predicted_sales": 4.97
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 5.91
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 15,
+        "predicted_sales": 5.79
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 5.7
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 6,
+        "predicted_sales": 5.84
+      }
+    ],
+    "HOBBIES_1_017": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 1.05
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 2,
+        "predicted_sales": 1.21
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 1.38
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 1.51
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 3,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 2,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 1.0
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 1.02
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 4,
+        "predicted_sales": 1.14
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 3,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 3,
+        "predicted_sales": 1.13
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 6,
+        "predicted_sales": 1.04
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 2,
+        "predicted_sales": 1.11
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 1.12
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 1.27
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.52
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 1.32
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.54
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 1.37
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 1.76
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 6,
+        "predicted_sales": 1.62
+      }
+    ],
+    "HOBBIES_1_018": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.02
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.22
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.01
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.08
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.22
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.02
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.08
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.22
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.29
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.02
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.08
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.22
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.29
+      }
+    ],
+    "HOBBIES_1_019": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 5,
+        "predicted_sales": 6.07
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 8,
+        "predicted_sales": 5.0
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 5,
+        "predicted_sales": 5.5
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 21,
+        "predicted_sales": 5.52
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 5,
+        "predicted_sales": 6.41
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 3,
+        "predicted_sales": 5.76
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 24,
+        "predicted_sales": 5.09
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 6,
+        "predicted_sales": 7.56
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 25,
+        "predicted_sales": 5.29
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 4,
+        "predicted_sales": 6.65
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 6,
+        "predicted_sales": 6.75
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 16,
+        "predicted_sales": 6.52
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 5,
+        "predicted_sales": 6.25
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 10,
+        "predicted_sales": 7.72
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 24,
+        "predicted_sales": 7.35
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 6,
+        "predicted_sales": 9.04
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 5,
+        "predicted_sales": 8.24
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 6,
+        "predicted_sales": 9.19
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 3,
+        "predicted_sales": 8.52
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 31,
+        "predicted_sales": 7.87
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 30,
+        "predicted_sales": 9.96
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 8.75
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 5,
+        "predicted_sales": 9.84
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 7.96
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 11,
+        "predicted_sales": 8.22
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 4,
+        "predicted_sales": 8.76
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 6,
+        "predicted_sales": 9.4
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 12,
+        "predicted_sales": 10.74
+      }
+    ],
+    "HOBBIES_1_020": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.08
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.18
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.21
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 0.48
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.22
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.2
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.36
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.49
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.2
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.6
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.18
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.54
+      }
+    ],
+    "HOUSEHOLD_1_001": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.32
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 0.39
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 2,
+        "predicted_sales": 0.59
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.2
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.36
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.34
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.47
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 0.48
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.85
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.76
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.21
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.25
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.32
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.48
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 0.46
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 0.54
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.12
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 0.19
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.26
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.33
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.52
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.47
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 0.6
+      }
+    ],
+    "HOUSEHOLD_1_002": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.02
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 0.3
+      }
+    ],
+    "HOUSEHOLD_1_003": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 0.77
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.77
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 2,
+        "predicted_sales": 0.75
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.85
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.98
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 1.55
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 1.28
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 1.0
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.98
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.11
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 1.11
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 1.28
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.72
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 0.66
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 2,
+        "predicted_sales": 0.94
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 0.8
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.91
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 2,
+        "predicted_sales": 0.63
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 1.05
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 1.09
+      }
+    ],
+    "HOUSEHOLD_1_004": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 1.24
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 1.44
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 6,
+        "predicted_sales": 1.79
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 1.73
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 6,
+        "predicted_sales": 1.39
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.95
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 1.08
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 1.32
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 1.27
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.53
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 7,
+        "predicted_sales": 1.71
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 1.84
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 1.25
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 1.31
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 1.53
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 2.01
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 5,
+        "predicted_sales": 1.92
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 2.14
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 1.36
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 1.31
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.29
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 1.48
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 1.38
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 2.24
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 1.5
+      }
+    ],
+    "HOUSEHOLD_1_005": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 2,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 1.31
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.23
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 1.26
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 1.39
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 1.61
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 1.9
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 2,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 2,
+        "predicted_sales": 1.29
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 3,
+        "predicted_sales": 1.27
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.52
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 3,
+        "predicted_sales": 1.56
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 5,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 1,
+        "predicted_sales": 1.19
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 1.07
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 2,
+        "predicted_sales": 1.12
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 1.4
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 1.4
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 1.57
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 3,
+        "predicted_sales": 1.77
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 1.18
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.49
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 1.61
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 1.52
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 1.71
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 2.0
+      }
+    ],
+    "HOUSEHOLD_1_006": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 1.44
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 1.45
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 1,
+        "predicted_sales": 1.5
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 1.61
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 3,
+        "predicted_sales": 1.93
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 5,
+        "predicted_sales": 1.78
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 4,
+        "predicted_sales": 2.22
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 1.67
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 1.4
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 2,
+        "predicted_sales": 1.69
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 4,
+        "predicted_sales": 1.79
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 4,
+        "predicted_sales": 1.9
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 4,
+        "predicted_sales": 1.8
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 3,
+        "predicted_sales": 2.14
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 3,
+        "predicted_sales": 1.29
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 1.27
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 3,
+        "predicted_sales": 1.52
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 1.72
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 3,
+        "predicted_sales": 2.08
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 4,
+        "predicted_sales": 2.36
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 2,
+        "predicted_sales": 2.33
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 6,
+        "predicted_sales": 1.72
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 3,
+        "predicted_sales": 1.79
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 2,
+        "predicted_sales": 2.06
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 2,
+        "predicted_sales": 2.27
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 2.43
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 3,
+        "predicted_sales": 2.61
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 4,
+        "predicted_sales": 2.46
+      }
+    ],
+    "HOUSEHOLD_1_007": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 2,
+        "predicted_sales": 1.7
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 3,
+        "predicted_sales": 1.8
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 2.2
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 5,
+        "predicted_sales": 2.47
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 2.16
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 4,
+        "predicted_sales": 2.44
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 7,
+        "predicted_sales": 2.68
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 1.87
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 2.19
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 6,
+        "predicted_sales": 2.01
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 5,
+        "predicted_sales": 2.58
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 3,
+        "predicted_sales": 2.33
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 4,
+        "predicted_sales": 2.42
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 2.83
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 2.07
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 2.22
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 2.18
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 2,
+        "predicted_sales": 2.75
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 2.42
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 3,
+        "predicted_sales": 2.88
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 3.08
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 2.08
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 2.21
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 3,
+        "predicted_sales": 2.71
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 2.65
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 5,
+        "predicted_sales": 2.43
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 3,
+        "predicted_sales": 2.69
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 2,
+        "predicted_sales": 2.34
+      }
+    ],
+    "HOUSEHOLD_1_008": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 2,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.57
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.61
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 0.72
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 0.98
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.29
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.48
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 0.49
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 0.62
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.66
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 2,
+        "predicted_sales": 0.68
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.66
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.98
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 1.07
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 2,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.73
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.68
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 0.9
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.77
+      }
+    ],
+    "HOUSEHOLD_1_009": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.55
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.52
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.13
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.64
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.18
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 2,
+        "predicted_sales": 0.25
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 0.33
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.59
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.29
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.4
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.42
+      }
+    ],
+    "HOUSEHOLD_1_010": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 1.39
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 2,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 2,
+        "predicted_sales": 1.57
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 1.88
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 1.59
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 3,
+        "predicted_sales": 1.73
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 1.15
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 1.19
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 1.29
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 1.57
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 2,
+        "predicted_sales": 1.54
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 3,
+        "predicted_sales": 1.64
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 6,
+        "predicted_sales": 1.73
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 0.96
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 1.09
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 2,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 2,
+        "predicted_sales": 1.41
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 1.42
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 3,
+        "predicted_sales": 1.5
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 2.08
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 3,
+        "predicted_sales": 1.29
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 1.45
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 1,
+        "predicted_sales": 1.58
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 1.65
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 1.67
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 1.95
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 2.12
+      }
+    ],
+    "HOUSEHOLD_1_011": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 2,
+        "predicted_sales": 1.34
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 1.23
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.36
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 1.79
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 2.03
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 4,
+        "predicted_sales": 1.76
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 3,
+        "predicted_sales": 1.65
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 3,
+        "predicted_sales": 1.58
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 2,
+        "predicted_sales": 1.37
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 1.47
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 1.52
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 1.82
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 3,
+        "predicted_sales": 1.8
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 2,
+        "predicted_sales": 1.64
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 1.42
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 4,
+        "predicted_sales": 1.37
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 2,
+        "predicted_sales": 1.28
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 1.32
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 1.37
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 1.9
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 1.84
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 1.35
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 1.57
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 1.45
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 1.44
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 1.48
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 1.79
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 1.79
+      }
+    ],
+    "HOUSEHOLD_1_012": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.65
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.66
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 1,
+        "predicted_sales": 0.85
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.77
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.86
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 2,
+        "predicted_sales": 0.88
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.5
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 0.48
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 3,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.68
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.72
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.76
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 3,
+        "predicted_sales": 0.92
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 0.56
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.72
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 1.21
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.8
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 4,
+        "predicted_sales": 0.92
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 0.78
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 0.86
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 1.23
+      }
+    ],
+    "HOUSEHOLD_1_013": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 2,
+        "predicted_sales": 2.17
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 2.42
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 4,
+        "predicted_sales": 2.39
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 2.48
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 2.37
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 2.45
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 3,
+        "predicted_sales": 3.06
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 2.22
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 2.08
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 2.28
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 2.49
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 2.26
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 2,
+        "predicted_sales": 2.27
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 2,
+        "predicted_sales": 2.53
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 1.89
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 1.75
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 2.09
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 1.83
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 1.73
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 1.8
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 2,
+        "predicted_sales": 1.95
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 1.4
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 1.48
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 2,
+        "predicted_sales": 1.42
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 1.55
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 1.61
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 4,
+        "predicted_sales": 1.74
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 1.77
+      }
+    ],
+    "HOUSEHOLD_1_014": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 1,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.01
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.08
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.27
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 0.07
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 0.14
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.15
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.22
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.35
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.06
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 0.0
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.19
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 1,
+        "predicted_sales": 0.22
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 0.29
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.13
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.26
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 2,
+        "predicted_sales": 0.28
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.48
+      }
+    ],
+    "HOUSEHOLD_1_015": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 0.29
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.36
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.02
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.09
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.36
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.44
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.39
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 0.37
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.44
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.03
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.16
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.23
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 0.3
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 0.47
+      }
+    ],
+    "HOUSEHOLD_1_016": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 1.99
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 2,
+        "predicted_sales": 1.71
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 1.97
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 2.0
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 1,
+        "predicted_sales": 2.03
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 2,
+        "predicted_sales": 2.32
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 3,
+        "predicted_sales": 2.52
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 7,
+        "predicted_sales": 2.12
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 1.82
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 3,
+        "predicted_sales": 1.94
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 1.95
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 2,
+        "predicted_sales": 1.95
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 4,
+        "predicted_sales": 2.35
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 2,
+        "predicted_sales": 2.83
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 3,
+        "predicted_sales": 2.0
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 5,
+        "predicted_sales": 2.03
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 1,
+        "predicted_sales": 1.99
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 7,
+        "predicted_sales": 2.05
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 2.21
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 1,
+        "predicted_sales": 2.5
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 8,
+        "predicted_sales": 2.64
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 4,
+        "predicted_sales": 2.62
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 2.32
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 2.41
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 2.55
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 4,
+        "predicted_sales": 2.51
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 2.74
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 3.03
+      }
+    ],
+    "HOUSEHOLD_1_017": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.46
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 0,
+        "predicted_sales": 0.53
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 0,
+        "predicted_sales": 0.6
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 0,
+        "predicted_sales": 0.67
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 0,
+        "predicted_sales": 0.73
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 0,
+        "predicted_sales": 0.86
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.39
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.43
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 0.51
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 0,
+        "predicted_sales": 0.48
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 0.47
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 0,
+        "predicted_sales": 0.04
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 0.45
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.04
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 0,
+        "predicted_sales": 0.1
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.17
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.24
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 0.31
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 0.38
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 1,
+        "predicted_sales": 0.45
+      }
+    ],
+    "HOUSEHOLD_1_018": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 3,
+        "predicted_sales": 0.98
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 2,
+        "predicted_sales": 0.89
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 1,
+        "predicted_sales": 0.85
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 1.07
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 3,
+        "predicted_sales": 0.97
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 1,
+        "predicted_sales": 1.1
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 1.24
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 1,
+        "predicted_sales": 0.75
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 1,
+        "predicted_sales": 0.93
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 1,
+        "predicted_sales": 0.99
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 1,
+        "predicted_sales": 1.15
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 2,
+        "predicted_sales": 1.14
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 1.14
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 1.33
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 1.1
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 1,
+        "predicted_sales": 1.08
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 0,
+        "predicted_sales": 1.08
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 1,
+        "predicted_sales": 1.15
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 1.46
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 2,
+        "predicted_sales": 1.28
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 2,
+        "predicted_sales": 1.32
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 2,
+        "predicted_sales": 0.95
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 0.98
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 4,
+        "predicted_sales": 1.01
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 1,
+        "predicted_sales": 1.12
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 1,
+        "predicted_sales": 1.24
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 0,
+        "predicted_sales": 1.31
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 3,
+        "predicted_sales": 1.29
+      }
+    ],
+    "HOUSEHOLD_1_019": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 8,
+        "predicted_sales": 3.9
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 5,
+        "predicted_sales": 3.49
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 4,
+        "predicted_sales": 3.47
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 4,
+        "predicted_sales": 3.38
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 8,
+        "predicted_sales": 3.29
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 0,
+        "predicted_sales": 4.46
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 6,
+        "predicted_sales": 4.51
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 3,
+        "predicted_sales": 3.74
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 4,
+        "predicted_sales": 3.59
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 3,
+        "predicted_sales": 3.63
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 3.72
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 0,
+        "predicted_sales": 3.84
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 2,
+        "predicted_sales": 4.68
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 0,
+        "predicted_sales": 4.11
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 2,
+        "predicted_sales": 3.97
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 7,
+        "predicted_sales": 3.82
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 3,
+        "predicted_sales": 3.81
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 3,
+        "predicted_sales": 3.69
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 2,
+        "predicted_sales": 4.05
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 5,
+        "predicted_sales": 3.48
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 1,
+        "predicted_sales": 3.96
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 1,
+        "predicted_sales": 3.17
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 1,
+        "predicted_sales": 3.59
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 3.43
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 3.26
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 3.3
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 2,
+        "predicted_sales": 3.64
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 3.13
+      }
+    ],
+    "HOUSEHOLD_1_020": [
+      {
+        "date": "2016-03-28",
+        "actual_sales": 0,
+        "predicted_sales": 0.7
+      },
+      {
+        "date": "2016-03-29",
+        "actual_sales": 1,
+        "predicted_sales": 0.79
+      },
+      {
+        "date": "2016-03-30",
+        "actual_sales": 1,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-03-31",
+        "actual_sales": 1,
+        "predicted_sales": 0.8
+      },
+      {
+        "date": "2016-04-01",
+        "actual_sales": 3,
+        "predicted_sales": 1.04
+      },
+      {
+        "date": "2016-04-02",
+        "actual_sales": 2,
+        "predicted_sales": 1.02
+      },
+      {
+        "date": "2016-04-03",
+        "actual_sales": 1,
+        "predicted_sales": 0.94
+      },
+      {
+        "date": "2016-04-04",
+        "actual_sales": 0,
+        "predicted_sales": 0.61
+      },
+      {
+        "date": "2016-04-05",
+        "actual_sales": 0,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-04-06",
+        "actual_sales": 0,
+        "predicted_sales": 0.72
+      },
+      {
+        "date": "2016-04-07",
+        "actual_sales": 0,
+        "predicted_sales": 0.82
+      },
+      {
+        "date": "2016-04-08",
+        "actual_sales": 1,
+        "predicted_sales": 0.94
+      },
+      {
+        "date": "2016-04-09",
+        "actual_sales": 1,
+        "predicted_sales": 1.07
+      },
+      {
+        "date": "2016-04-10",
+        "actual_sales": 1,
+        "predicted_sales": 1.02
+      },
+      {
+        "date": "2016-04-11",
+        "actual_sales": 3,
+        "predicted_sales": 0.58
+      },
+      {
+        "date": "2016-04-12",
+        "actual_sales": 2,
+        "predicted_sales": 0.71
+      },
+      {
+        "date": "2016-04-13",
+        "actual_sales": 3,
+        "predicted_sales": 0.77
+      },
+      {
+        "date": "2016-04-14",
+        "actual_sales": 0,
+        "predicted_sales": 0.84
+      },
+      {
+        "date": "2016-04-15",
+        "actual_sales": 0,
+        "predicted_sales": 1.15
+      },
+      {
+        "date": "2016-04-16",
+        "actual_sales": 2,
+        "predicted_sales": 1.15
+      },
+      {
+        "date": "2016-04-17",
+        "actual_sales": 0,
+        "predicted_sales": 1.12
+      },
+      {
+        "date": "2016-04-18",
+        "actual_sales": 0,
+        "predicted_sales": 0.75
+      },
+      {
+        "date": "2016-04-19",
+        "actual_sales": 2,
+        "predicted_sales": 0.81
+      },
+      {
+        "date": "2016-04-20",
+        "actual_sales": 0,
+        "predicted_sales": 0.98
+      },
+      {
+        "date": "2016-04-21",
+        "actual_sales": 0,
+        "predicted_sales": 0.95
+      },
+      {
+        "date": "2016-04-22",
+        "actual_sales": 0,
+        "predicted_sales": 1.05
+      },
+      {
+        "date": "2016-04-23",
+        "actual_sales": 1,
+        "predicted_sales": 1.22
+      },
+      {
+        "date": "2016-04-24",
+        "actual_sales": 0,
+        "predicted_sales": 1.22
+      }
+    ]
+  }
+}
